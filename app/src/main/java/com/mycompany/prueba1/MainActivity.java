@@ -3,21 +3,11 @@ package com.mycompany.prueba1;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.EditText;
 import android.content.Intent;
 import android.view.View;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
-import android.view.View;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     //private EditText txtNombre;
@@ -42,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Creamos el Intent
-                Intent intent = new Intent(MainActivity.this, SaludoActivity.class);
+                Intent intent = new Intent(MainActivity.this, DatosActivity.class);
 
                 /*/Creamos la información a pasar entre actividades
                 Bundle b = new Bundle();

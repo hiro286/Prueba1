@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class SaludoActivity extends AppCompatActivity {
+public class DatosActivity extends AppCompatActivity {
 
     private TextView txtSaludo;
     private Button btnAcptHi;
@@ -15,7 +15,7 @@ public class SaludoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_saludo);
+        setContentView(R.layout.activity_datos);
 
         //Localizar los controles
         txtSaludo = (TextView)findViewById(R.id.TxtSaludo);
@@ -31,7 +31,7 @@ public class SaludoActivity extends AppCompatActivity {
         btnAcptHi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(SaludoActivity.this, PruebaActivity.class);
+                Intent i = new Intent(DatosActivity.this, PruebaActivity.class);
                 startActivity(i);
             }
         });
