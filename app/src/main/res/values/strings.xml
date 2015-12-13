@@ -21,9 +21,15 @@
     <string name="btn_nxt">Next</string>
     <!-- Datos Persoanles -->
     <string name="cv_data_init">Estado Inicial</string>
+    <string name="cv_data_goal">Meta</string>
     <string name="data_init_descrip">Introduce tus datos segun tu ultima prueba.</string>
-    <string name="hint_dist_init">(Metros)</string>
-    <string name="hint_time_init">(Min:Seg)</string>
+    <string name="data_goal_descrip">Introduce los datos de tu meta a alcanzar.</string>
+    <string name="hint_dist">(Metros)</string>
+    <string name="hint_time">(Min:Seg)</string>
+    <string name="hint_total_weeks">Semanas a entrenar</string>
+    <string name="hint_days_per_week">Dias a entrenar por semana</string>
+    <string name="data_init_ritmo">Ritmo: </string>
+    <string name="data_goal_ritmo">Ritmo: </string>
     <!-- Otros: -->
     <string name="nombre">"Escribe tu Nombre:"</string>
     <string name="tarjeta_1">"Haz de estar deseando empezar ya no? \n Solo queremos decirte que la aplicacion podria no lograr diseñar un correcto programa si hay algun problema con los datos introducidos \n (p.e. que la duracion del programa sea muy corta) "</string>

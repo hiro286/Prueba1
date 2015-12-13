@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +19,27 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        Button btnAceptar = (Button)findViewById(R.id.BtnAceptar);
+        //Implementamos el evento click del botón
+        btnAceptar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Creamos el Intent
+                Intent intent = new Intent(MainActivity.this, DataActivity.class);
+
+                /*/Creamos la información a pasar entre actividades
+                Bundle b = new Bundle();
+                b.putString("NOMBRE", txtNombre.getText().toString());
+
+                //Añadimos la información al intent
+                intent.putExtras(b);*/
+
+                //Iniciamos la nueva actividad
+                startActivity(intent);
+            }
+        });
+
 
         /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
