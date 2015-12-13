@@ -10,12 +10,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class DataActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_data);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -45,15 +46,20 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         Intent intent;
 
+        /*/noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }*/
         switch (item.getItemId()){
             case R.id.action_settings:
+
                 return true;
             case R.id.action_data:
-                intent = new Intent(MainActivity.this, DataActivity.class);
-                startActivity(intent);
+                //intent = new Intent(DataActivity.this, DataActivity.class);
+                //startActivity(intent);
                 return true;
             case R.id.action_plan:
-                intent = new Intent(MainActivity.this, PlanActivity.class);
+                intent = new Intent(DataActivity.this, PlanActivity.class);
                 startActivity(intent);
                 return true;
             default:

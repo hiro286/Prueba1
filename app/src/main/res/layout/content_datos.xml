@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:id="@+id/LytContenedorSaludo">
 
-    <!-- Toolbar -->
+    <!-- Toolbar ->
     <android.support.v7.widget.Toolbar
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/appbar"
@@ -17,7 +17,11 @@
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" /-->
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -47,7 +51,7 @@
                     android:layout_below="@+id/TxtSaludo"
                     android:layout_alignParentRight="true"
                     android:padding="8dp"
-                    android:text="@string/nxt"
+                    android:text="@string/btn_nxt"
                     android:textColor="#666"
                     style="?android:attr/borderlessButtonStyle"/>
 

@@ -1,17 +1,13 @@
 <resources>
+    <!-- titulos -->
     <string name="app_name">Alpha Runner</string>
-    <string name="nombre">"Escribe tu Nombre:"</string>
-    <string name="aceptar">"Aceptar"</string>
-    <string name="title_activity_saludo">"Saludo"</string>
-    <string name="tarjeta_1">"Haz de estar deseando empezar ya no? \n Solo queremos decirte que la aplicacion podria no lograr diseñar un correcto programa si hay algun problema con los datos introducidos \n (p.e. que la duracion del programa sea muy corta) "</string>
-    <string name="loremipsum">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</string>
-    <string name="title_activity_prueba">prueba</string>
-    <string name="nxt">Next</string>
-    <string name="usuario">"Hola que hace usuario? :V"</string>
+    <string name="title_activity_datos">"Mis Datos"</string>
+    <string name="title_activity_data">Mis Datos</string>
+    <string name="title_activity_prueba">Entrenamiento</string>
     <!-- menu_main -->
-    <string name="action_settings">Opciones</string>
-    <string name="action_data">Mis Datos</string>
-    <string name="action_plan">Entrenamiento</string>
+    <string name="menu_settings">Opciones</string>
+    <string name="menu_data">Mis Datos</string>
+    <string name="menu_plan">Entrenamiento</string>
     <!-- navbar -->
     <string name="seccion_1">"Seccion 1"</string>
     <string name="seccion_2">"Seccion 2"</string>
@@ -20,7 +16,18 @@
     <string name="opcion_1">"Opcion 1"</string>
     <string name="opcion_2">"Opcion 2"</string>
     <string name="opcion_3">"Opcion 3"</string>
-    <!--
-    <string name="">""</string>
-    -->
+    <!-- Botones -->
+    <string name="btn_accept">"Aceptar"</string>
+    <string name="btn_nxt">Next</string>
+    <!-- Datos Persoanles -->
+    <string name="cv_data_init">Estado Inicial</string>
+    <string name="data_init_descrip">Introduce tus datos segun tu ultima prueba.</string>
+    <string name="hint_dist_init">(Metros)</string>
+    <string name="hint_time_init">(Min:Seg)</string>
+    <!-- Otros: -->
+    <string name="nombre">"Escribe tu Nombre:"</string>
+    <string name="tarjeta_1">"Haz de estar deseando empezar ya no? \n Solo queremos decirte que la aplicacion podria no lograr diseñar un correcto programa si hay algun problema con los datos introducidos \n (p.e. que la duracion del programa sea muy corta) "</string>
+    <string name="loremipsum">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</string>
+    <string name="usuario">"Hola que hace usuario? :V"</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>

@@ -6,17 +6,17 @@
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="@string/menu_settings"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_data"
         android:orderInCategory="100"
-        android:title="@string/action_data"
+        android:title="@string/menu_data"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_plan"
         android:orderInCategory="100"
-        android:title="@string/action_plan"
+        android:title="@string/menu_plan"
         app:showAsAction="never" />
 <!--    <item
         android:id="@+id/action_search"
