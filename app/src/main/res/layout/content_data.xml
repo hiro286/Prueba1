@@ -91,7 +91,7 @@
                                     android:layout_height="wrap_content"
                                     android:textSize="15dp"
                                     android:hint="@string/hint_min"
-                                    android:inputType="time"/>
+                                    android:inputType="number"/>
                             </android.support.design.widget.TextInputLayout>
 
                             <android.support.design.widget.TextInputLayout
@@ -105,7 +105,7 @@
                                     android:layout_height="wrap_content"
                                     android:textSize="15dp"
                                     android:hint="@string/hint_seg"
-                                    android:inputType="time"/>
+                                    android:inputType="number"/>
                             </android.support.design.widget.TextInputLayout>
 
                         </LinearLayout><!-- vertical -->
@@ -121,15 +121,7 @@
                                 android:layout_marginLeft="20pt"
                                 android:layout_marginTop="10pt"
                                 android:text="@string/data_init_ritmo"/>
-                            <Button
-                                android:id="@+id/btn_data_calc_init"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="15pt"
-                                android:layout_marginTop="5pt"
-                                android:text="@string/calc_init"
-                                android:textColor="#FAFAFA"
-                                style="?android:attr/borderlessButtonStyle"/>
+
                         </LinearLayout>
 
                     </LinearLayout><!-- horizontal -->
@@ -203,9 +195,9 @@
                                     android:id="@+id/txt_data_minutos_meta"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:textSize="15dp"
+
                                     android:hint="@string/hint_min"
-                                    android:inputType="time"/>
+                                    android:inputType="number"/>
                             </android.support.design.widget.TextInputLayout>
 
                             <android.support.design.widget.TextInputLayout
@@ -217,9 +209,9 @@
                                     android:id="@+id/txt_data_segundos_meta"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:textSize="15dp"
+
                                     android:hint="@string/hint_seg"
-                                    android:inputType="time"/>
+                                    android:inputType="number"/>
 
                             </android.support.design.widget.TextInputLayout>
 
@@ -236,15 +228,7 @@
                                 android:layout_marginLeft="20pt"
                                 android:layout_marginTop="10pt"
                                 android:text="@string/data_goal_ritmo"/>
-                            <Button
-                                android:id="@+id/btn_data_calc_goal"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="15pt"
-                                android:layout_marginTop="5pt"
-                                android:text="@string/calc_init"
-                                android:textColor="#FAFAFA"
-                                style="?android:attr/borderlessButtonStyle"/>
+
                         </LinearLayout>
 
                     </LinearLayout> <!-- horizontal -->
@@ -276,7 +260,6 @@
                             android:id="@+id/txt_data_total_weeks"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="6pt"
                             android:hint="@string/hint_total_weeks"
                             android:inputType="number"/>
 
@@ -291,7 +274,6 @@
                             android:id="@+id/txt_data_days_per_week"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="6pt"
                             android:hint="@string/hint_days_per_week"
                             android:inputType="number"/>
 
