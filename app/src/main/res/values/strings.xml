@@ -35,6 +35,15 @@
     <string name="data_goal_ritmo">Ritmo: </string>
     <string name="make_plan">Crear Plan!</string>
     <string name="calc_init">Calcular</string>
+    <!-- Plan  -->
+    <string name="hint_semana">No. Semana:</string>
+    <string name="hint_dia">No. Día:</string>
+    <string name="btn_plan_ver">ver</string>
+    <string name="txt_plan_tipo">Fondo/Velocidad\n</string>
+    <string name="txt_plan_distancia">Distancia: \n</string>
+    <string name="txt_plan_tiempo_trabajo">Tiempo de Trabajo: \n</string>
+    <string name="txt_plan_tiempo_descanso">Tiempo de Descanso: \n</string>
+    <string name="txt_plan_vueltas">Vueltas: \n</string>
     <!-- Otros: -->
     <string name="nombre">"Escribe tu Nombre:"</string>
     <string name="tarjeta_1">

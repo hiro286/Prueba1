@@ -48,6 +48,11 @@ public class DataActivity extends AppCompatActivity {
     private Integer seconds_Goal_Int = 0;
     private Integer weeks_Int = 0;
     private Integer daysPerWeek_Int = 0;
+    private Integer ritmoBaseInt = 0;
+    private Integer ritmoMetaInt = 0;
+    //
+    private String txt_ritmo_base;
+    private String txt_ritmo_meta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -224,6 +229,8 @@ public class DataActivity extends AppCompatActivity {
                     // Intecidad neta decimal
                     Integer intensity_init = tiempo_init / distancia_init;
                     Integer intensity_goal = tiempo_goal / distancia_goal;
+                    ritmoBaseInt = intensity_init;
+                    ritmoMetaInt = intensity_goal;
 
                     //La intensidad esta en segundos por kilometro, por lo cual
                     // la meta debe ser a menor tiempo para que sea mayor su
@@ -253,12 +260,14 @@ public class DataActivity extends AppCompatActivity {
                     }else
                         segundos_Meta = intensity_seg_goal.toString();
 
-                    intensity_Init.setText("Ritmo: \n" +
+                    txt_ritmo_base = "Ritmo: \n" +
                             intensity_min_init.toString() + ":" +
-                            segundos_Base + " min/Km");
-                    intensity_Goal.setText("Ritmo: \n" +
+                            segundos_Base + " min/Km";
+                    txt_ritmo_meta = "Ritmo: \n" +
                             intensity_min_goal.toString() + ":" +
-                            segundos_Meta + " min/Km");
+                            segundos_Meta + " min/Km";
+                    intensity_Init.setText(txt_ritmo_base);
+                    intensity_Goal.setText(txt_ritmo_meta);
 
                     //intensity_Init.setText([String]);
                 }
@@ -339,10 +348,13 @@ public class DataActivity extends AppCompatActivity {
         editor.putInt("segundosBase",Integer.parseInt(secondsInit.getText().toString()) );
         editor.putInt("distanciaMeta",Integer.parseInt(distGoal.getText().toString()) );
         editor.putInt("minutosMeta",Integer.parseInt(minutesGoal.getText().toString()) );
-        editor.putInt("segundosMeta",Integer.parseInt(secondsGoal.getText().toString()) );
+        editor.putInt("segundosMeta", (Integer.parseInt(secondsGoal.getText().toString()) / 1000) );
         editor.putInt("semanas",Integer.parseInt(weeks.getText().toString()) );
         editor.putInt("diasPorSemana",Integer.parseInt(daysPerWeek.getText().toString()) );
-
+        editor.putInt("ritmoBaseInt",ritmoBaseInt);
+        editor.putInt("ritmoMetaInt",ritmoMetaInt);
+        editor.putString("ritmoBase", txt_ritmo_base);
+        editor.putString("ritmoMeta",txt_ritmo_meta);
         // Commit the edits!
         editor.commit();
     }
@@ -397,19 +409,24 @@ public class DataActivity extends AppCompatActivity {
             secondsGoal.setText(seconds_Goal_Int.toString(), TextView.BufferType.EDITABLE);
         }
 
-        Integer weeks = settings.getInt("semanas",-1);
+        Integer weeks = settings.getInt("semanas", -1);
         if (weeks != -1){
             weeks_Int = weeks;
             this.weeks  = (EditText)findViewById(R.id.txt_data_total_weeks);
             this.weeks.setText(weeks_Int.toString(), TextView.BufferType.EDITABLE);
         }
 
-        Integer daysWeek = settings.getInt("diasPorSemana",-1);
+        Integer daysWeek = settings.getInt("diasPorSemana", -1);
         if (daysWeek != -1){
             daysPerWeek_Int = daysWeek;
             daysPerWeek  = (EditText)findViewById(R.id.txt_data_days_per_week);
             daysPerWeek.setText(daysPerWeek_Int.toString(), TextView.BufferType.EDITABLE);
         }
+
+        intensity_Init = (TextView)findViewById(R.id.data_init_ritmo);
+        intensity_Goal = (TextView)findViewById(R.id.data_goal_ritmo);
+        intensity_Init.setText(settings.getString("ritmoBase","Ritmo:\n"));
+        intensity_Goal.setText(settings.getString("ritmoMeta","Ritmo:\n"));
     }
 
     @Override
